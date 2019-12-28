@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Halaman_Admin">
+
+    <ImageView
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_welcome_admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/layout_1"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnArtikel"
+            android:text="Artikel"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:background="@drawable/ic_artikel_button"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="25dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+        <Button
+            android:id="@+id/btnVideo"
+            android:text="Video"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:background="@drawable/ic_video_button"
+            android:textColor="@android:color/white"
+            android:layout_marginStart="25dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_2"
+        android:layout_below="@+id/layout_1"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnChat"
+            android:text="Chat"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:background="@drawable/ic_chat_button"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="25dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"/>
+
+        <Button
+            android:id="@+id/btn_logout_admin"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:text="Logout"
+            android:background="@drawable/ic_logout_button"
+            android:layout_marginStart="25dp"
+            android:textSize="18sp"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

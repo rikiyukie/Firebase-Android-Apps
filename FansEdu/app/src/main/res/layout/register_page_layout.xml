@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Register_Page">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="30dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Akun Baru"
+            android:textSize="24sp"
+            android:textColor="@color/dark"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Nama Lengkap"
+            android:textSize="16sp"
+            android:textColor="@color/dark"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/reg_nama"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Nama Lengkap"
+            android:maxLength="20"
+            android:textSize="16sp"
+            android:textColor="@color/dark"
+            android:paddingLeft="10dp"/>
+
+        <TextView
+            android:text="Nickname"
+            android:textSize="16sp"
+            android:textColor="@color/dark"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/reg_username"
+            android:hint="Nickname"
+            android:maxLength="16"
+            android:textSize="16sp"
+            android:textColor="@color/dark"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:text="Email"
+            android:textSize="16sp"
+            android:textColor="@color/dark"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/reg_email"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="16sp"
+            android:textColor="@color/dark"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:text="Password"
+            android:textSize="16sp"
+            android:textColor="@color/dark"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/reg_password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:maxLength="16"
+            android:inputType="textPassword"
+            android:textSize="16sp"
+            android:textColor="@color/dark"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:layout_gravity="end"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/progressBar_register"
+            style="?android:attr/progressBarStyle"
+            android:padding="5dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"/>
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Register"
+            android:textSize="18sp"
+            android:layout_marginStart="20dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/ic_button_bg" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
