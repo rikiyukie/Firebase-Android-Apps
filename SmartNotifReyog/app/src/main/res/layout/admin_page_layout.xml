@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_admin_bg"
+    tools:context=".Admin_Page">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:text="WELCOME..!!"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/admin"
+        android:text="ADMIN :)"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/adminEmail"
+        android:text="email"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginStart="25dp"
+        android:layout_below="@+id/admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/add_pentas"
+            android:background="@drawable/ic_button_bg"
+            android:text="Pentas Baru"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/kelolaPentas"
+            android:background="@drawable/ic_button_bg"
+            android:textAllCaps="false"
+            android:text="Kelola Pentas"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:id="@+id/video_btn"
+            android:background="@drawable/ic_button_bg"
+            android:textAllCaps="false"
+            android:text="Video"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_logout_admin"
+        android:background="@drawable/ic_button_logout_bg"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>
