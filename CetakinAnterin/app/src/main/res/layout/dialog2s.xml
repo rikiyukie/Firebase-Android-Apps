@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/nama2s"
+            android:text="Nama User"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="No.Hp"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/nohp2s"
+                android:text=":  -"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Alamat"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/alamat2s"
+                android:text=":  -"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Nama File"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/namafile2s"
+                android:text=":  -"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Status"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/status2s"
+                android:text=":  -"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Tanggal Order"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tglorder2s"
+                android:text=":  -"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Tanggal Diterima"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tglditerima2s"
+                android:text=":  -"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Tanggal konfirmasi"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tglkonfirmasi2s"
+                android:text=":  -"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Keterangan"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/keterangan2s"
+                android:text=":  -"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

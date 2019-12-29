@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AdminPage">
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <TextView
+            android:text="Admin Page"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </Toolbar>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:background="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/layout_switch"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Status Toko : "
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_vertical"
+                    android:layout_marginEnd="40dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/status_toko"
+                    android:text="Buka"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:gravity="center_vertical"
+                    android:layout_width="55dp"
+                    android:layout_height="match_parent"/>
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:checked="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:thumb="@drawable/ic_thumb_selector"
+                    android:track="@drawable/ic_switch_thumb" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Pengumuman :"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/txt_Pengumuman"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Text pengumuman"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btn_pengumuman"
+                android:layout_gravity="center_horizontal"
+                android:text="Edit"
+                android:textSize="16sp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/ic_button_bg_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_orderan"
+            android:layout_gravity="center_horizontal"
+            android:text="Kerjakan Pesanan"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:background="@drawable/ic_button_bg"
+            android:layout_marginBottom="15dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_selesai"
+            android:layout_gravity="center_horizontal"
+            android:text="Pesanan Selesai"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:background="@drawable/ic_button_bg_ijo"
+            android:layout_marginBottom="15dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/logout_admin"
+            android:layout_gravity="center_horizontal"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:background="@drawable/ic_button_bg_merah"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/ic_print"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+            android:text="@string/app_name"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
