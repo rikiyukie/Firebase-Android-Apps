@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Admin_Page">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:visibility="visible"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:text="@string/app_name"
+            android:textSize="18sp"
+            android:textColor="@color/colorAccent"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </Toolbar>
+
+    <LinearLayout
+        android:id="@+id/layouttop"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/reog_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:text="Welcome Admin"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/adminEmail"
+                android:text="email"
+                android:textSize="12sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/layouttop"
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/button_add"
+                android:background="@drawable/ic_button_bg_white"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="15dp"
+                android:layout_width="60pt"
+                android:layout_height="60pt">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_event_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Pentas Baru"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/button_kelola"
+                android:background="@drawable/ic_button_bg_white"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_width="60pt"
+                android:layout_height="60pt">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_event_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Kelola Pentas"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_below="@+id/layout1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/button_video"
+                android:background="@drawable/ic_button_bg_white"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginEnd="15dp"
+                android:layout_width="60pt"
+                android:layout_height="60pt">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_video_library_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Video"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/button_logout"
+                android:background="@drawable/ic_button_bg_white"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="15dp"
+                android:layout_width="60pt"
+                android:layout_height="60pt">
+
+                <ImageView
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_out_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:text="Logout"
+                    android:layout_marginTop="10dp"
+                    android:textSize="14sp"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
