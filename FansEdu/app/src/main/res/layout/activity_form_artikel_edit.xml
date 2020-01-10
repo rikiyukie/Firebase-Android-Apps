@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Form_Artikel_Edit">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:visibility="visible"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:text="Edit Artikel"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </Toolbar>
+
+    <ImageView
+        android:id="@+id/gambar_edit"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_banner_bg"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp"
+        android:layout_width="100pt"
+        android:layout_height="60pt"/>
+
+    <LinearLayout
+        android:layout_below="@+id/gambar_edit"
+        android:layout_above="@+id/progressBar_Artikel"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Judul Artikel :"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginStart="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/judulartikel_edit"
+            android:hint="Ketik Judul"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Isi Artikel :"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/isiartikel_edit"
+            android:hint="Ketik Isi"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:paddingStart="10sp"
+            android:paddingEnd="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:layout_above="@+id/btnsave_edit"
+        android:id="@+id/progressBar_Artikel"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/btnsave_edit"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/ic_button_bg"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

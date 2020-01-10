@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fans Edu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addvideodialog">
+        Pastikan yang diinput hanya kode videonya saja..!! bukan full link video, kesalahan input mengakibatkan viedo tidak dapat diputar.\n\nContoh :\nwww.youtube.com/yix3h2cqCAQ\nkode video = yix3h2cqCAQ
+    </string>
+</resources>

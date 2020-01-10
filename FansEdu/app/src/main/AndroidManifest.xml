@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.fans.edu">
+
+    <dist:module dist:instant="true" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher2_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_launcher2_icon_rounded"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Form_Artikel_Edit"></activity>
+        <activity android:name=".Kelola_Artikel" />
+        <activity android:name=".ChatRoom_Admin" />
+        <activity android:name=".AkunSetting" />
+        <activity android:name=".Artikel_Page" />
+        <activity android:name=".Form_Video" />
+        <activity android:name=".Form_Artikel" />
+        <activity android:name=".Halaman_Admin" />
+        <activity android:name=".Register_Page" />
+        <activity android:name=".Login_Page" />
+        <activity android:name=".Home_Page" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
